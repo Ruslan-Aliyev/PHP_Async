@@ -124,13 +124,8 @@ php artisan migrate
 
 ## Async Guzzle
 
-- CURL in plain PHP:
-- Normal Guzzle and **async Guzzle**:
-
-- http://artisansweb.net/use-guzzle-php-http-client-sending-http-requests/
-- https://www.geeksforgeeks.org/how-to-make-asynchronous-http-requests-in-php/
-- https://jeromejaglale.com/doc/php/laravel_asynchronous_guzzle_requests_using_promises
-- https://medium.com/@ardanirohman/how-to-handle-async-request-concurrency-with-promise-in-guzzle-6-cac10d76220e
+- CURL in plain PHP: https://github.com/Ruslan-Aliyev/async_php/tree/master/curl
+- Normal Guzzle and **async Guzzle**: https://github.com/Ruslan-Aliyev/async_php/tree/master/guzzle
 
 ## Socket and log file
 
