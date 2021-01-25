@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Jobs\SendMailJob;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('sendEmail', function () {
+    //dispatch(new SendMailJob);
+    
+    $job = (new SendMailJob)->delay(now()->addSeconds(5));
+    dispatch($job);
+    
+    return 'Email sent';
 });

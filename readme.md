@@ -81,6 +81,42 @@ https://stackoverflow.com/questions/14236296/asynchronous-function-call-in-php
 
 - https://www.youtube.com/watch?v=fFy-s7_SbYM
 
+Use emailing functionality for example.
+
+1. Get mail server credentials/configs sorted
+2. In `routes/web.php`
+```php
+Route::get('sendEmail', function () {
+    Mail::send(new SendEmailMailable());
+});
+```
+3. `php artisan make:mail SendEmailMailable`. `app/Mail/SendEmailMailable.php` is created. We should make a view to send for its build function. But for this example, just use the `welcome.blade.php`. 
+4. http://localhost/async_php/laravel/public/sendEmail , **But it's slow and it blocks**.
+
+5. Start using queues: https://laravel.com/docs/8.x/queues#driver-prerequisites
+
+6. Configure DB creds in `.env`
+
+7. Run
+```
+php artisan queue:table
+php artisan migrate
+```
+
+8. `php artisan make:job SendMailJob`
+
+9. Move this line `Mail::to('ruslandeveloper2020@gmail.com')->send(new SendEmailMailable());` from `routes/web.php` to `App\Jobs\SendMailJob::handle`
+
+10. Dispatch the job from `routes/web.php`
+
+11. In `.env`: `QUEUE_CONNECTION=database` instead of `sync`. (This affects `config/queue.php`)
+
+12. Now if you go to http://localhost/async_php/laravel/public/sendEmail , the reaction is instant. But email isn't sent. Instead it's queued up in the DB `jobs` table. 
+
+13. Now we just need another process to 'flush' those jobs. https://laravel.com/docs/8.x/queues#running-the-queue-worker
+
+14. Run `php artisan queue:work` in another terminal.
+
 ---
 
 # Make async http requests
