@@ -64,6 +64,7 @@ According to POSTMAN, it takes an average of 30ms
 ### Plain PHP
 
 - https://divinglaravel.com/asynchronous-php
+- https://tomasvotruba.com/blog/2018/02/05/how-to-run-symfony-processes-asynchronously/
 
 ### Spatie
 
@@ -123,10 +124,10 @@ php artisan migrate
 
 ## Async Guzzle
 
-For reference - this is normal Guzzle:
+- CURL in plain PHP:
+- Normal Guzzle and **async Guzzle**:
 
-![](https://raw.githubusercontent.com/Ruslan-Aliyev/async_php/master/Illustrations/normal_guzzle.jpg)
-
+- http://artisansweb.net/use-guzzle-php-http-client-sending-http-requests/
 - https://www.geeksforgeeks.org/how-to-make-asynchronous-http-requests-in-php/
 - https://jeromejaglale.com/doc/php/laravel_asynchronous_guzzle_requests_using_promises
 - https://medium.com/@ardanirohman/how-to-handle-async-request-concurrency-with-promise-in-guzzle-6-cac10d76220e
