@@ -1,0 +1,12 @@
+{
+    "name": "victor/guzzle",
+    "authors": [
+        {
+            "name": "atabegruslan",
+            "email": "ruslan_aliyev_@hotmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
