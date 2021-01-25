@@ -63,12 +63,11 @@ According to POSTMAN, it takes an average of 30ms
 
 ### Plain PHP
 
-- https://divinglaravel.com/asynchronous-php
-- https://tomasvotruba.com/blog/2018/02/05/how-to-run-symfony-processes-asynchronously/
+https://github.com/Ruslan-Aliyev/async_php/tree/master/processes
 
 ### Spatie
 
-- https://github.com/spatie/async
+https://github.com/Ruslan-Aliyev/async_php/tree/master/spatie_async
 
 ## Queue 
 
