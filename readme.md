@@ -117,6 +117,10 @@ php artisan migrate
 
 14. Run `php artisan queue:work` in another terminal.
 
+#### Multiple queues
+
+http://laravel.at.jeffsbox.eu/laravel-5-queues-multiple-queues
+
 ---
 
 # Make async http requests
