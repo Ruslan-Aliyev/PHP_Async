@@ -69,6 +69,10 @@ https://github.com/Ruslan-Aliyev/async_php/tree/master/processes
 
 https://github.com/Ruslan-Aliyev/async_php/tree/master/spatie_async
 
+## Threads
+
+https://stackoverflow.com/questions/70855/how-can-one-use-multi-threading-in-php-applications
+
 ## Queue 
 
 https://stackoverflow.com/questions/14236296/asynchronous-function-call-in-php
@@ -122,6 +126,8 @@ php artisan migrate
 # Make async http requests
 
 ## Async Guzzle
+
+Theory: https://stackoverflow.com/questions/35655616/how-does-guzzle-send-async-web-requests
 
 - CURL in plain PHP: https://github.com/Ruslan-Aliyev/async_php/tree/master/curl
 - Normal Guzzle and **async Guzzle**: https://github.com/Ruslan-Aliyev/async_php/tree/master/guzzle
