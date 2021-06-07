@@ -83,7 +83,8 @@ https://stackoverflow.com/questions/14236296/asynchronous-function-call-in-php
 
 ### Laravel
 
-- https://www.youtube.com/watch?v=fFy-s7_SbYM
+- Very good tutorial: https://www.youtube.com/watch?v=fFy-s7_SbYM
+- https://laravel-guide.readthedocs.io/en/latest/queues/
 
 Use emailing functionality for example.
 
@@ -124,6 +125,10 @@ php artisan migrate
 #### Multiple queues
 
 http://laravel.at.jeffsbox.eu/laravel-5-queues-multiple-queues
+
+#### RabbitMQ
+
+https://laravel-news.com/laravel-jobs-queues-101
 
 ---
 
