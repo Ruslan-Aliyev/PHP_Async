@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Jobs\SendMailJob;
+use App\Jobs\AnotherJob;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,8 +22,15 @@ Route::get('/', function () {
 Route::get('sendEmail', function () {
     //dispatch(new SendMailJob);
     
-    $job = (new SendMailJob)->delay(now()->addSeconds(5));
+    $job = (new SendMailJob)
+        ->delay(now()->addSeconds(5));
     dispatch($job);
-    
+
+    // another queue
+    $anotherJob = (new AnotherJob)
+        ->onQueue('another')
+        ->delay(now()->addSeconds(5));
+    dispatch($anotherJob);
+
     return 'Email sent';
 });

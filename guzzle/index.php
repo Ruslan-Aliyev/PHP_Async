@@ -48,6 +48,8 @@ $client = new Client();
 // start request
 $promise = $client->getAsync($base_url.$path)->then(
     function ($response) {
+        echo 'test';
+        sleep(10);echo 'test2';return;
         return $response->getBody();
     }, function ($exception) {
         return $exception->getMessage();
