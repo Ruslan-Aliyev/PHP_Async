@@ -126,6 +126,18 @@ php artisan migrate
 
 http://laravel.at.jeffsbox.eu/laravel-5-queues-multiple-queues
 
+#### Failed Jobs
+
+https://laravel.com/docs/8.x/queues#dealing-with-failed-jobs 
+
+#### Batches and Chains
+
+Chains - Serial: https://laravel.com/docs/8.x/queues#job-chaining
+
+Batches - "Parallel": https://laravel.com/docs/8.x/queues#job-batching
+
+https://github.com/laravel/framework/issues/35447
+
 #### RabbitMQ
 
 https://laravel-news.com/laravel-jobs-queues-101
