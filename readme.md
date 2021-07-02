@@ -126,6 +126,40 @@ php artisan migrate
 
 http://laravel.at.jeffsbox.eu/laravel-5-queues-multiple-queues
 
+config/queue.php
+```php
+'connections' => [
+	...
+        'database' => [
+            'driver' => 'database',
+            'table' => 'jobs',
+            'queue' => 'default',
+            'retry_after' => 90,
+	],
+
+        'another' => [ // another queue
+            'driver' => 'database',
+            'table' => 'jobs',
+            'queue' => 'low',
+            'retry_after' => 90,
+        ],
+```
+
+routes/web.php
+```php
+    $job = (new SendMailJob)
+        ->delay(now()->addSeconds(5));
+    dispatch($job);
+
+    // another queue
+    $anotherJob = (new AnotherJob)
+        ->onQueue('another')
+        ->delay(now()->addSeconds(5));
+    dispatch($anotherJob);
+```
+
+`php artisan queue:work --queue=database,another`
+
 #### Failed Jobs
 
 https://laravel.com/docs/8.x/queues#dealing-with-failed-jobs 
@@ -140,7 +174,8 @@ https://github.com/laravel/framework/issues/35447
 
 #### RabbitMQ
 
-https://laravel-news.com/laravel-jobs-queues-101
+- https://laravel-news.com/laravel-jobs-queues-101
+- https://github.com/atabegruslan/chat#rabbit-mq
 
 ---
 
