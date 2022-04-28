@@ -9,6 +9,7 @@
 
 - https://www.swoole.co.uk/docs/get-started/installation
 - https://www.swoole.co.uk/
+- https://www.youtube.com/watch?v=NbgyPAiop9k
 
 ### Laravel
 
