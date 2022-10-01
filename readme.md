@@ -56,6 +56,10 @@ According to POSTMAN, it takes an average of 30ms
 
 ## ReactPHP
 
+## Plain PHP
+
+https://gist.github.com/greut/949850
+
 ---
 
 # Make asynchronous work
