@@ -179,16 +179,6 @@ https://github.com/laravel/framework/issues/35447
 
 #### RabbitMQ
 
-RabbitMQ:
-- https://www.youtube.com/watch?v=deG25y_r6OY
-- https://www.youtube.com/watch?v=GMmRtSFQ5Z0
-In Laravel:
-- https://github.com/vyuldashev/laravel-queue-rabbitmq
-- https://laravel-news.com/laravel-rabbitmq-queue-driver
-- https://www.twilio.com/blog/rabbitmq-job-queues-laravel
-See also:
-- https://laravel-news.com/laravel-jobs-queues-101
-- https://github.com/atabegruslan/chat#rabbit-mq
 
 ---
 
