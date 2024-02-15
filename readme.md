@@ -179,6 +179,7 @@ https://github.com/laravel/framework/issues/35447
 
 #### RabbitMQ
 
+https://github.com/Ruslan-Aliyev/laravel-rabbitmq
 
 ---
 
